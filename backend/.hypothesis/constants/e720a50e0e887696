@@ -1,0 +1,4 @@
+# file: /Users/sathvikvempati/Desktop/DocWiz/backend/app/schemas/cost.py
+# hypothesis_version: 6.148.7
+
+['^(png|jpeg)$', 'png']

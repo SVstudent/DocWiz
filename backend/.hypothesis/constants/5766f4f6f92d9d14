@@ -1,0 +1,4 @@
+# file: /Users/sathvikvempati/Desktop/DocWiz/backend/app/api/routes/procedures.py
+# hypothesis_version: 6.148.7
+
+[404, '/categories', '/initialize', '/procedures', '/{procedure_id}', 'Filter by category', 'count', 'max', 'message', 'min', 'procedures']

@@ -1,0 +1,4 @@
+# file: /Users/sathvikvempati/Desktop/DocWiz/backend/app/api/routes/insurance.py
+# hypothesis_version: 6.148.7
+
+[404, 500, '/claims', '/insurance', '/validate', 'Content-Disposition', 'application/json', 'application/pdf', 'insurance']

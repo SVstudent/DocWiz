@@ -1,0 +1,4 @@
+# file: /Users/sathvikvempati/Desktop/DocWiz/backend/app/services/embedding_service.py
+# hypothesis_version: 6.148.7
+
+[255.0, 224, 768, 'RGB', 'age_range', 'constant', 'created_at', 'outcome_rating', 'patient_id', 'procedure_type', 'visualization_id']

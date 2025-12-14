@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['localhost'],
+    domains: ['localhost', 'storage.googleapis.com'],
   },
   experimental: {
     serverActions: true,

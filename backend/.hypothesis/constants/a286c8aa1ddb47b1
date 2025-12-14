@@ -1,0 +1,4 @@
+# file: /Users/sathvikvempati/Desktop/DocWiz/backend/app/services/visualization_service.py
+# hypothesis_version: 6.148.7
+
+[0.0, 0.8, 0.85, 200, 365, '20-30', '30-40', '40-50', '50-60', '60-plus', 'after_image_url', 'age_range', 'anonymized', 'anonymous', 'before_image_url', 'category', 'confidence_score', 'date_of_birth', 'finish_reason', 'gemini_model', 'generated_at', 'id', 'image/jpeg', 'metadata', 'name', 'outcome_rating', 'patient_id', 'patient_satisfaction', 'payload', 'procedure_id', 'procedure_name', 'procedure_type', 'prompt_template', 'prompt_used', 'score', 'similarity_score', 'under-20', 'unknown', 'visualization_id']

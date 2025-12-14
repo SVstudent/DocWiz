@@ -1,0 +1,4 @@
+# file: /Users/sathvikvempati/Desktop/DocWiz/backend/app/db/models.py
+# hypothesis_version: 6.148.7
+
+['created_at', 'email', 'hashed_password', 'id', 'is_active', 'updated_at']

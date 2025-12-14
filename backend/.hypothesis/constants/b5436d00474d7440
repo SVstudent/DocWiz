@@ -1,0 +1,4 @@
+# file: /Users/sathvikvempati/Desktop/DocWiz/backend/app/services/export_service.py
+# hypothesis_version: 6.148.7
+
+[0.1, 0.2, 0.3, 0.5, 102, 128, 204, 255, 800, 1000, '#0066CC', '<b>Data Sources:</b>', '==', 'Anesthesia Fee:', 'BOTTOMPADDING', 'CustomHeading', 'CustomTitle', 'Disclaimer', 'FONTNAME', 'FONTSIZE', 'Facility Fee:', 'Heading1', 'Heading2', 'Helvetica', 'Helvetica-Bold', 'Insurance Coverage:', 'LINEABOVE', 'MEDICAL DISCLAIMER:', 'Normal', 'Post-Op Care:', 'REDACTED', 'RGB', 'Surgeon Fee:', 'Total Cost:', 'copay', 'data_sources', 'deductible', 'insurance_coverage', 'insurance_provider', 'jpeg', 'json', 'patient_id', 'pdf', 'png', 'utf-8']

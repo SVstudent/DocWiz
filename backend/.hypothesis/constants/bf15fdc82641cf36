@@ -1,0 +1,4 @@
+# file: /Users/sathvikvempati/Desktop/DocWiz/backend/app/services/comparison_service.py
+# hypothesis_version: 6.148.7
+
+[0.0, 'after_image_url', 'before_image_url', 'cost', 'cost_differences', 'created_at', 'high', 'id', 'low', 'medium', 'metadata', 'name', 'patient_id', 'procedure_count', 'procedure_id', 'procedure_ids', 'procedure_name', 'procedures', 'recovery_days', 'recovery_differences', 'risk_differences', 'risk_level', 'source_image_id', 'typical_cost_range', 'unknown', 'visualization_id']

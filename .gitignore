@@ -42,6 +42,12 @@ dist/
 .env.test.local
 .env.production.local
 
+# Firebase/Google Cloud credentials (NEVER COMMIT THESE!)
+firebase-credentials.json
+*-firebase-adminsdk-*.json
+service-account-key.json
+google-credentials.json
+
 # IDEs
 .vscode/
 .idea/
@@ -75,3 +81,10 @@ exports/
 *.png
 *.jpg
 *.jpeg
+
+# Firebase credentials (NEVER commit!)
+firebase-credentials.json
+*-firebase-adminsdk-*.json
+
+# MCP settings (keep template, ignore with secrets)
+# .kiro/settings/mcp.json should be committed as template

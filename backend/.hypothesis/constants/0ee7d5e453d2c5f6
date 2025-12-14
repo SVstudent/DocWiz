@@ -1,0 +1,4 @@
+# file: /Users/sathvikvempati/Desktop/DocWiz/backend/app/api/routes/images.py
+# hypothesis_version: 6.148.7
+
+['/images', '/upload', '/{image_id}', 'images', 'message']

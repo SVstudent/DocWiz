@@ -1,0 +1,4 @@
+# file: /Users/sathvikvempati/Desktop/DocWiz/backend/app/services/image_validation_service.py
+# hypothesis_version: 6.148.7
+
+[100, 1024, 8000, 50000, 'CMYK', 'F', 'File is empty', 'HSV', 'I', 'JPEG', 'L', 'LA', 'LAB', 'P', 'PNG', 'RGB', 'RGBA', 'WEBP', 'YCbCr', 'error', 'format', 'has_transparency', 'height', 'info', 'mode', 'width']

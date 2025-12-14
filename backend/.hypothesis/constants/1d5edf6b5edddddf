@@ -1,0 +1,4 @@
+# file: /Users/sathvikvempati/Desktop/DocWiz/backend/app/tasks/export_tasks.py
+# hypothesis_version: 6.148.7
+
+[100, 'FAILURE', 'Finalizing export', 'PROCESSING', 'completed', 'error', 'pdf', 'png', 'progress', 'result', 'status']

@@ -1,0 +1,4 @@
+# file: /Users/sathvikvempati/Desktop/DocWiz/backend/app/services/visualization_service.py
+# hypothesis_version: 6.148.7
+
+[0.0, 0.8, 0.85, 10.0, 60.0, 200, 365, '.jpg', '.png', '.webp', '20-30', '30-40', '40-50', '50-60', '60-plus', 'JPEG', 'PNG', 'WEBP', 'after_image_url', 'age_range', 'anonymized', 'anonymous', 'before_image_url', 'category', 'confidence_score', 'date_of_birth', 'format', 'generated_at', 'id', 'image/jpeg', 'metadata', 'model', 'moderate', 'name', 'natural fullness', 'outcome_rating', 'patient_id', 'patient_satisfaction', 'payload', 'procedure_id', 'procedure_name', 'procedure_type', 'prompt_template', 'prompt_used', 'proportionate', 'score', 'similarity_score', 'the affected area', 'under-20', 'unknown', 'upper and lower', 'url', 'visualization_id', '{augmentation_level}', '{eyelid_location}', '{modification_type}', '{size_preference}', '{target_area}', '{target_size}', '{volume_level}']

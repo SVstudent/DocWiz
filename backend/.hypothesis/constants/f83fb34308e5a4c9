@@ -1,0 +1,4 @@
+# file: /Users/sathvikvempati/Desktop/DocWiz/backend/app/services/insurance_doc_service.py
+# hypothesis_version: 6.148.7
+
+['(555) 123-4567', '1234567890', 'address', 'anesthesia_fee', 'category', 'claim_type', 'cost_estimate', 'cpt_codes', 'date_of_birth', 'description', 'facility_fee', 'group_number', 'icd10_codes', 'insurance_provider', 'name', 'npi', 'patient', 'phone', 'policy_number', 'post_op_care', 'pre_authorization', 'procedure', 'provider', 'specialty', 'submission_date', 'surgeon_fee', 'total_cost']

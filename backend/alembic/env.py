@@ -1,22 +1,41 @@
 """Alembic environment configuration."""
+import sys
 from logging.config import fileConfig
+from pathlib import Path
 
 from sqlalchemy import engine_from_config
 from sqlalchemy import pool
 
 from alembic import context
 
+# Add parent directory to path for imports
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
+# Import models and base
+from app.db.base import Base
+from app.db.models import (
+    User,
+    PatientProfile,
+    ProfileVersionHistory,
+    Procedure,
+    VisualizationResult,
+    CostBreakdown,
+    PreAuthForm,
+)
+from app.config import settings
+
 # this is the Alembic Config object
 config = context.config
+
+# Override sqlalchemy.url with our settings
+config.set_main_option("sqlalchemy.url", settings.database_url)
 
 # Interpret the config file for Python logging
 if config.config_file_name is not None:
     fileConfig(config.config_file_name)
 
 # Add your model's MetaData object here for 'autogenerate' support
-# from app.models import Base
-# target_metadata = Base.metadata
-target_metadata = None
+target_metadata = Base.metadata
 
 
 def run_migrations_offline() -> None:

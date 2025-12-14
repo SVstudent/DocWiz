@@ -1,0 +1,4 @@
+# file: /Users/sathvikvempati/Desktop/DocWiz/backend/app/config.py
+# hypothesis_version: 6.148.7
+
+[6333, ',', '.env', '0.1.0', 'DocWiz API', 'HS256', 'development', 'gcs', 'localhost', 'surgical_embeddings']

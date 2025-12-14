@@ -1,0 +1,4 @@
+# file: /Users/sathvikvempati/Desktop/DocWiz/backend/app/schemas/visualization.py
+# hypothesis_version: 6.148.7
+
+['Additional metadata', 'After image URL', 'Before image URL', 'Filter by age range', 'Generation timestamp', 'Procedure ID', 'Procedure name', 'Procedure type', 'Visualization ID']

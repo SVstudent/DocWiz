@@ -1,0 +1,4 @@
+# file: /Users/sathvikvempati/Desktop/DocWiz/backend/app/services/task_service.py
+# hypothesis_version: 6.148.7
+
+[100, 'FAILURE', 'PENDING', 'PROCESSING', 'Processing', 'RETRY', 'REVOKED', 'SUCCESS', 'Task failed', 'Task was cancelled', 'cancelled', 'error', 'message', 'meta', 'progress', 'ready', 'result', 'state', 'status', 'successful', 'task_id']

@@ -1,0 +1,4 @@
+# file: /Users/sathvikvempati/Desktop/DocWiz/backend/app/api/routes/profiles.py
+# hypothesis_version: 6.148.7
+
+['/profiles', '/{profile_id}', 'Profile not found', 'invalid_fields', 'message', 'missing_fields', 'profiles']

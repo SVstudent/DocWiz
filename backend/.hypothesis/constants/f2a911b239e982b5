@@ -1,0 +1,4 @@
+# file: /Users/sathvikvempati/Desktop/DocWiz/backend/app/services/nano_banana_client.py
+# hypothesis_version: 6.148.7
+
+[0.3, 0.4, 0.95, 1.0, 60.0, 200, 429, 512, 1024, 'Max retries exceeded', 'Rate limit exceeded', 'candidates', 'content', 'contents', 'finishReason', 'finish_reason', 'gemini-nano', 'generationConfig', 'key', 'maxOutputTokens', 'parts', 'patient', 'raw_response', 'safetyRatings', 'safety_ratings', 'temperature', 'text', 'token_count', 'topK', 'topP']

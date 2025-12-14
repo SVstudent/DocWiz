@@ -1,0 +1,4 @@
+# file: /Users/sathvikvempati/Desktop/DocWiz/backend/app/services/freepik_client.py
+# hypothesis_version: 6.148.7
+
+[1.0, 120.0, 180.0, 200, 201, 401, 429, 800, 1024, 1200, 'Authorization', 'Content-Type', 'Max retries exceeded', 'Rate limit exceeded', 'anesthesia_fee', 'application/json', 'data', 'duration', 'facility_fee', 'format', 'fps', 'height', 'id', 'image_id', 'image_url', 'insurance_coverage', 'jpeg', 'num_images', 'output_format', 'png', 'post_op_care', 'professional', 'prompt', 'raw_response', 'style', 'surgeon_fee', 'total_cost', 'url', 'video_id', 'video_url', 'width']

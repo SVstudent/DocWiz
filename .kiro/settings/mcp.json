@@ -1,0 +1,20 @@
+{
+  "mcpServers": {
+    "mcp-freepik": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://api.freepik.com/mcp",
+        "--header",
+        "x-freepik-api-key:${FREEPIK_API_KEY}"
+      ],
+      "env": {
+        "FREEPIK_API_KEY": "FPSXedda870c251de3f5499157331c05d96a"
+      },
+      "disabled": true,
+      "autoApprove": [],
+      "_comment": "Freepik does not currently provide an MCP server. Use the REST API client in backend/app/services/freepik_client.py instead."
+    }
+  }
+}

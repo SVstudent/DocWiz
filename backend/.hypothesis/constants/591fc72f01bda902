@@ -1,0 +1,4 @@
+# file: /Users/sathvikvempati/Desktop/DocWiz/backend/app/services/gemini_client.py
+# hypothesis_version: 6.148.7
+
+[0.4, 1.0, 60.0, 100, 200, 429, 1024, 4096, 'JPEG', 'Max retries exceeded', 'PNG', 'Rate limit exceeded', 'WEBP', 'candidates', 'content', 'contents', 'data', 'finishReason', 'finish_reason', 'gemini-2.0-flash-exp', 'generationConfig', 'image/jpeg', 'inline_data', 'key', 'maxOutputTokens', 'mime_type', 'parts', 'raw_response', 'safetyRatings', 'safety_ratings', 'temperature', 'text', 'topK', 'topP', 'utf-8']

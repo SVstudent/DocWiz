@@ -1,0 +1,4 @@
+# file: /Users/sathvikvempati/Desktop/DocWiz/backend/app/services/qdrant_client.py
+# hypothesis_version: 6.148.7
+
+[768, 'age_range', 'float', 'id', 'keyword', 'name', 'outcome_rating', 'payload', 'points_count', 'procedure_type', 'score', 'status', 'unknown', 'vector_size', 'vectors']

@@ -1,0 +1,4 @@
+# file: /Users/sathvikvempati/Desktop/DocWiz/backend/app/db/base.py
+# hypothesis_version: 6.148.7
+
+['comparisons', 'cost_breakdowns', 'patient_profiles', 'preauth_forms', 'procedures', 'projectId', 'users']

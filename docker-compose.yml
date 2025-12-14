@@ -1,23 +1,22 @@
 version: '3.8'
 
 services:
-  postgres:
-    image: postgres:15-alpine
-    container_name: docwiz-postgres
-    environment:
-      POSTGRES_USER: docwiz
-      POSTGRES_PASSWORD: docwiz_dev_password
-      POSTGRES_DB: docwiz
+  # Firestore Emulator (for local development)
+  firestore:
+    image: gcr.io/google.com/cloudsdktool/google-cloud-cli:latest
+    container_name: docwiz-firestore
+    command: gcloud emulators firestore start --host-port=0.0.0.0:8080
     ports:
-      - "5432:5432"
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
+      - "8080:8080"
+    environment:
+      - FIRESTORE_PROJECT_ID=docwiz-dev-project
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U docwiz"]
+      test: ["CMD", "curl", "-f", "http://localhost:8080"]
       interval: 10s
       timeout: 5s
       retries: 5
 
+  # Qdrant Vector Database
   qdrant:
     image: qdrant/qdrant:latest
     container_name: docwiz-qdrant
@@ -32,6 +31,7 @@ services:
       timeout: 5s
       retries: 5
 
+  # Redis (for caching and Celery)
   redis:
     image: redis:7-alpine
     container_name: docwiz-redis
@@ -45,7 +45,33 @@ services:
       timeout: 5s
       retries: 5
 
+  # Celery Worker (optional - for async task processing)
+  # Uncomment to run Celery worker in Docker
+  # celery-worker:
+  #   build:
+  #     context: ./backend
+  #     dockerfile: Dockerfile
+  #   container_name: docwiz-celery-worker
+  #   command: poetry run celery -A celery_worker worker --loglevel=info --pool=solo
+  #   volumes:
+  #     - ./backend:/app
+  #   environment:
+  #     - REDIS_URL=redis://redis:6379/0
+  #     - CELERY_BROKER_URL=redis://redis:6379/0
+  #     - CELERY_RESULT_BACKEND=redis://redis:6379/0
+  #     - FIREBASE_PROJECT_ID=${FIREBASE_PROJECT_ID}
+  #     - FIREBASE_CREDENTIALS_PATH=/app/firebase-credentials.json
+  #     - GEMINI_API_KEY=${GEMINI_API_KEY}
+  #     - NANO_BANANA_API_KEY=${NANO_BANANA_API_KEY}
+  #     - FREEPIK_API_KEY=${FREEPIK_API_KEY}
+  #     - QDRANT_HOST=qdrant
+  #     - QDRANT_PORT=6333
+  #   depends_on:
+  #     - redis
+  #     - firestore
+  #     - qdrant
+  #   restart: unless-stopped
+
 volumes:
-  postgres_data:
   qdrant_data:
   redis_data:

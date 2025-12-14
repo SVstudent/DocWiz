@@ -1,0 +1,4 @@
+# file: /Users/sathvikvempati/Desktop/DocWiz/backend/app/schemas/export.py
+# hypothesis_version: 6.148.7
+
+['Download URL', 'Export format', 'Export status', 'File size in bytes', 'Patient name', 'Patient profile ID', 'completed', 'failed', 'jpeg', 'json', 'pdf', 'pending', 'png', 'processing']

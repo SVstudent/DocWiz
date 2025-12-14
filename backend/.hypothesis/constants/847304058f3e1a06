@@ -1,0 +1,4 @@
+# file: /Users/sathvikvempati/Desktop/DocWiz/backend/app/db/models.py
+# hypothesis_version: 6.148.7
+
+[100, 255, 500, 'CostBreakdown', 'PatientProfile', 'Procedure', 'USA', 'User', 'VisualizationResult', 'category', 'cost_breakdowns', 'cost_breakdowns.id', 'generated_at', 'idx_cost_patient', 'idx_cost_procedure', 'idx_patient_zip_code', 'idx_preauth_patient', 'idx_procedure_name', 'insurance_provider', 'metadata', 'name', 'patient', 'patient_id', 'patient_profiles', 'patient_profiles.id', 'preauth_forms', 'procedure', 'procedure_id', 'procedures', 'procedures.id', 'profile', 'profile_id', 'user', 'users', 'users.id', 'version', 'version_history', 'visualizations', 'zip_code']

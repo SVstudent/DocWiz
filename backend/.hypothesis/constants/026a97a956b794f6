@@ -1,0 +1,4 @@
+# file: /Users/sathvikvempati/Desktop/DocWiz/backend/app/api/routes/auth.py
+# hypothesis_version: 6.148.7
+
+['/auth', '/login', '/logout', '/me', '/refresh', '/register', 'Bearer', 'WWW-Authenticate', 'access_token', 'authentication', 'bearer', 'email', 'message', 'sub', 'token_type']

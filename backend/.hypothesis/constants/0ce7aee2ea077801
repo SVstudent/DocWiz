@@ -1,0 +1,4 @@
+# file: /Users/sathvikvempati/Desktop/DocWiz/backend/app/schemas/comparison.py
+# hypothesis_version: 6.148.7
+
+['Additional metadata', 'After image URL', 'Before image URL', 'Estimated total cost', 'Procedure ID', 'Procedure name']

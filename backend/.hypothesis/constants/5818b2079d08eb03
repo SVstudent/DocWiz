@@ -1,0 +1,4 @@
+# file: /Users/sathvikvempati/Desktop/DocWiz/backend/app/api/dependencies.py
+# hypothesis_version: 6.148.7
+
+['Bearer', 'Inactive user', 'User not found', 'WWW-Authenticate', 'sub']

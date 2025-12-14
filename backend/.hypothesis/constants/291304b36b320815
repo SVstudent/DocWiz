@@ -1,0 +1,4 @@
+# file: /Users/sathvikvempati/Desktop/DocWiz/backend/app/services/storage_service.py
+# hypothesis_version: 6.148.7
+
+['.', '.jpg', '.png', '.webp', 'GET', 'image/jpeg', 'image/jpg', 'image/png', 'image/webp', 'v4']
