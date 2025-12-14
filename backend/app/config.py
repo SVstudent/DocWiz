@@ -1,5 +1,5 @@
 """Application configuration using Pydantic settings."""
-from typing import List
+from typing import List, Optional
 
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
@@ -27,29 +27,30 @@ class Settings(BaseSettings):
     firestore_emulator_host: str = ""
     use_firestore_emulator: bool = False
 
-    # Redis (for caching and Celery)
-    redis_url: str
+    # Redis (for caching and Celery) - optional for Cloud Run
+    redis_url: str = ""
 
-    # Qdrant Vector Database
+    # Qdrant Vector Database - optional for Cloud Run
     qdrant_host: str = "localhost"
     qdrant_port: int = 6333
     qdrant_collection_name: str = "surgical_embeddings"
+    qdrant_api_key: str = ""
 
     # Google AI Services
-    gemini_api_key: str
-    nano_banana_api_key: str
+    gemini_api_key: str = ""
+    nano_banana_api_key: str = ""
     
-    # Freepik API
-    freepik_api_key: str
+    # Freepik API - optional
+    freepik_api_key: str = ""
 
     # Google Cloud Storage (for images)
-    gcs_bucket_name: str
-    gcs_project_id: str
+    gcs_bucket_name: str = ""
+    gcs_project_id: str = ""
     gcs_credentials_path: str = ""
 
     # Security
-    secret_key: str
-    encryption_key: str
+    secret_key: str = "default-secret-key-change-in-production"
+    encryption_key: str = "default-encryption-key-32chars!"
     jwt_algorithm: str = "HS256"
     access_token_expire_minutes: int = 30
 
@@ -61,9 +62,9 @@ class Settings(BaseSettings):
         """Parse CORS origins from comma-separated string."""
         return [origin.strip() for origin in self.cors_origins.split(",")]
 
-    # Celery (async task processing)
-    celery_broker_url: str
-    celery_result_backend: str
+    # Celery (async task processing) - optional for Cloud Run
+    celery_broker_url: str = ""
+    celery_result_backend: str = ""
 
 
 # Global settings instance

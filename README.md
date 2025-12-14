@@ -6,40 +6,98 @@ DocWiz is a comprehensive surgical visualization and cost estimation platform th
 
 ## 🌟 Features
 
-- **AI-Powered Surgical Previews**: Photorealistic before/after visualizations using Google Gemini 2.5 Flash Image
+- **AI-Powered Surgical Previews**: Photorealistic before/after visualizations using Google Gemini
+- **AI Similarity Analysis**: Compare AI predictions with real results using multimodal AI
 - **Cost Estimation**: Detailed cost breakdowns with insurance coverage calculations
-- **Procedure Comparison**: Side-by-side comparison of multiple surgical options
-- **Similar Cases Search**: Find similar procedures using Qdrant vector similarity search
-- **Insurance Documentation**: Generate pre-authorization forms using Nano Banana
+- **Visual Infographics**: AI-generated cost breakdown graphics via Freepik
+- **Similar Cases Search**: Vector similarity search to find matching surgical outcomes
+- **Insurance Documentation**: Generate pre-authorization forms
 - **Comprehensive Exports**: Export reports in multiple formats (PDF, PNG, JPEG, JSON)
+
+---
+
+## � Core AI & Technology Integrations
+
+### 🤖 Google Gemini (Primary AI Engine)
+DocWiz leverages **Google Gemini 2.0 Flash** as its core AI engine for multiple capabilities:
+
+| Feature | Gemini Capability |
+|---------|-------------------|
+| **Surgical Visualization** | `gemini-2.0-flash` generates photorealistic before/after images of surgical outcomes |
+| **Multimodal Analysis** | Compares AI-predicted results with real post-surgery photos using vision + text |
+| **Medical Documentation** | Generates insurance pre-authorization forms and medical necessity letters |
+| **Text Analysis** | Analyzes procedure details and patient information |
+
+**Implementation**: `/backend/app/services/nano_banana_client.py`
+- `generate_image()` - Creates surgical visualizations
+- `generate_multimodal_analysis()` - Compares AI vs real results
+- `generate_text()` - Creates medical documentation
+
+---
+
+### 🧠 Qdrant (Vector Similarity Search)
+DocWiz uses **Qdrant** vector database to find similar surgical cases based on image embeddings:
+
+| Component | Purpose |
+|-----------|---------|
+| **Image Embeddings** | 768-dimensional vectors representing surgical visualizations |
+| **Similarity Search** | Find past cases visually similar to current patient |
+| **Filtered Queries** | Filter by procedure type, age range, outcome quality |
+| **Metadata Storage** | Store patient demographics (anonymized) with each case |
+
+**How it works**:
+```
+Patient uploads image → Generate embedding → 
+Search Qdrant for similar cases → Display matching outcomes
+```
+
+**Implementation**: `/backend/app/services/qdrant_client.py`, `/backend/app/services/embedding_service.py`
+
+---
+
+### 🎨 Freepik (Visual Asset Generation)
+DocWiz integrates **Freepik's AI API** for generating professional cost infographics:
+
+| Feature | Description |
+|---------|-------------|
+| **Cost Infographics** | Visual breakdown of surgical costs (surgeon fee, facility, anesthesia, etc.) |
+| **Professional Styling** | Medical-themed designs with surgical blue color scheme |
+| **Multiple Formats** | PNG/JPEG output for patient consultations |
+
+**Example prompt generated**:
+> "Create a professional medical cost breakdown infographic showing Total: $8,500, Surgeon Fee: $4,000..."
+
+**Implementation**: `/backend/app/services/freepik_client.py`
+
+---
+
+### ☁️ Firebase/Google Cloud
+- **Firestore** - NoSQL database for patients, procedures, visualizations
+- **Cloud Storage** - Image and document storage
+- **Authentication** - User auth via Firebase Auth
+
+---
 
 ## 🚀 Technology Stack
 
-### Google Cloud Services (Maximum Integration!)
-- **Google Gemini 2.5 Flash Image** - Surgical visualization generation
-- **Google Nano Banana** - Medical documentation generation
-- **Firebase/Firestore** - NoSQL document database
-- **Google Cloud Storage** - Image and file storage
-- **Freepik API** (via MCP) - Creative assets and infographics
+### Backend
+- FastAPI (Python 3.11+)
+- Google Gemini 2.0 Flash (AI generation)
+- Qdrant (vector similarity search)
+- Freepik API (infographic generation)
+- Firebase/Firestore (database)
+- Redis + Celery (async processing)
 
 ### Frontend
 - Next.js 14 with App Router
 - React 18 with TypeScript
-- Tailwind CSS ("surgically effective" design)
-- Zustand for state management
-- React Query for server state
-
-### Backend
-- FastAPI (Python 3.11+)
-- Firebase/Firestore for data storage
-- Qdrant for vector search
-- Redis for caching and task queue
-- Celery for async processing
+- Tailwind CSS
+- Zustand + React Query
 
 ### Testing
 - Hypothesis (property-based testing - 33 properties)
-- pytest (unit and integration tests)
-- Jest & fast-check (frontend testing)
+- pytest + Jest
+
 
 ## 🚀 Getting Started
 
