@@ -44,10 +44,12 @@ dist/
 .env.*
 backend/.env
 backend/.env.*
+backend/.env.example
 frontend/.env.local
 frontend/.env.production
 frontend/.env.production.local
-
+backend/debug_gemini_response.py
+backend/test_prompt_and_image.py
 # Firebase/Google Cloud credentials (NEVER COMMIT!)
 firebase-credentials.json
 *-firebase-adminsdk-*.json
