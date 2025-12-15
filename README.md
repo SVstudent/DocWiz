@@ -1,6 +1,6 @@
 # DocWiz - Surgical Visualization & Cost Estimation Platform
 
-> 🏆 Built for the Google DeepMind Sketch & Search Hackathon with maximum Google Cloud integration
+> Built for the Google DeepMind Sketch & Search Hackathon
 
 DocWiz is a comprehensive surgical visualization and cost estimation platform that helps patients make informed decisions about plastic and reconstructive surgeries. The system provides photorealistic previews of surgical outcomes using AI-powered image generation, detailed cost breakdowns with insurance calculations, and comparative analysis tools.
 
@@ -75,6 +75,32 @@ DocWiz integrates **Freepik's AI API** for generating professional cost infograp
 - **Firestore** - NoSQL database for patients, procedures, visualizations
 - **Cloud Storage** - Image and document storage
 - **Authentication** - User auth via Firebase Auth
+
+---
+
+## 🌐 Live Deployment
+
+DocWiz is fully deployed on **Google Cloud**:
+
+| Component | Platform | Live URL |
+|-----------|----------|----------|
+| **Frontend** | Firebase Hosting | https://doc-wiz-32041.web.app |
+| **Backend API** | Google Cloud Run | https://docwiz-backend-139909355072.us-central1.run.app |
+| **API Docs** | Swagger UI | https://docwiz-backend-139909355072.us-central1.run.app/docs |
+
+### Deployment Architecture
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    GOOGLE CLOUD                              │
+│  ┌─────────────────┐          ┌─────────────────────────┐   │
+│  │ Firebase        │          │ Cloud Run               │   │
+│  │ Hosting         │  ──────▶ │ (FastAPI Backend)       │   │
+│  │ (Next.js)       │          │ + Gemini API            │   │
+│  └─────────────────┘          │ + Firestore             │   │
+│                               │ + Cloud Storage         │   │
+│                               └─────────────────────────┘   │
+└─────────────────────────────────────────────────────────────┘
+```
 
 ---
 
