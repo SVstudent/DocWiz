@@ -272,32 +272,6 @@ cd frontend && npm run test
 - [Backend API Docs](http://localhost:8000/docs) - Interactive Swagger UI
 - [Database Layer](backend/app/db/README.md) - Firestore integration guide
 
-## 🏆 Hackathon Strategy
-
-DocWiz is designed to win the Google DeepMind hackathon by:
-
-✅ **Maximum Google Integration** - 5 Google services working together
-✅ **Production-Ready** - Scalable architecture with comprehensive testing
-✅ **Real-World Impact** - Solves actual healthcare decision-making problems
-✅ **Technical Depth** - AI, vector search, encryption, async processing
-✅ **Complete Documentation** - Every component fully documented
-
-### Key Differentiators
-- **33 Correctness Properties** with property-based testing
-- **Firebase/Firestore** instead of traditional SQL (better Google integration)
-- **Qdrant Vector Search** for intelligent case matching
-- **"Surgically Effective" Design** - clean, minimal, purposeful UI
-- **HIPAA-Compliant** - encrypted sensitive data, secure architecture
-
-## 📊 Project Status
-
-- ✅ Complete spec (requirements, design, tasks)
-- ✅ Firebase/Firestore integration
-- ✅ All Google services configured
-- ✅ Freepik MCP server set up
-- ✅ Testing strategy defined
-- 🚧 Implementation in progress (see tasks.md)
-
 ## 🤝 Contributing
 
 This is a hackathon project. To contribute:
